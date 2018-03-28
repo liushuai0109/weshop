@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const {exec, spawn} = require('child_process');
+const commander = require('commander');
+
+const package = require('../package.json');
+
+commander.version(package.version);
+
+commander.command('init');
+
+commander.command('page');
+
+commander.command('component');
+
+commander.command('dev');
+
+commander.command('release');
